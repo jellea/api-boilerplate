@@ -2,7 +2,7 @@
 
 var express = require('express')
   , _ = require('underscore')
-  , myOAP = require('./oauth').myOAP
+  , myOAP = require('./oauth-provider').myOAP
   , http = require('http')
   , path = require('path')
   , fs = require('fs')

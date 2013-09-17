@@ -18,7 +18,7 @@ myOAP.on('enforce_login', function(req, res, authorize_url, next) {
   if(req.session.user) {
     next(req.session.user);
   } else {
-    res.writeHead(303, {Location: '/login?next=' + encodeURIComponent(authorize_url)});
+    res.writeHead(303, {Location: '/auth/login?next=' + encodeURIComponent(authorize_url)});
     res.end();
   }
 });
